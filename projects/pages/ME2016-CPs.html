@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- PORTFOLIO SUBPAGE -->
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <style>html {visibility: hidden;opacity: 0;}</style>
+    <link rel="stylesheet" type="text/css" href="../../CSS/styleDark.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open Sans|Chivo|Montserrat">
+    <link rel="icon" href="../../images/pageIcon.png">
+    <meta name="keywords" content="Portfolio Engineering Internship Hire Job Mechanical Engineer pleasegivemeajoblol">
+    <meta name="description" content="Maximiliano Hernandez's Project Portfolio Website">
+    <meta name="author" content="Maximiliano Hernandez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximiliano Hernandez</title>
+
+    <script src="../../sub_HTMLJS/setCSS_proj.js"></script>
+    <script src="../../sub_HTMLJS/changeCSS_proj.js"></script>
+    <script src="../../sub_HTMLJS/navbarIconOpen2.js"></script>
+    <script src="../../sub_HTMLJS/pageDetect.js"></script>
+    
+    <noscript>
+        Please enable JavaScript! Every page is formed through external files and requires JavaScript.
+    </noscript>
+</head>
+
+<body onload="setCSS_proj();pageDetect()">
+    <div class="grid-container">
+        <script src="../../sub_HTMLJS/header-proj.js"></script>
+        <div class="project-page-content">
+            <div class="project-page-main">
+                <div class="proj-img-main"
+                    style="border-top: rgba(20,20,20,0.2) 1px solid;border-bottom: rgba(20,20,20,0.2) 1px solid;">
+                    <img src="portfolio/9_me2016cp/cps-cover.png" alt="Numerical Methods Projects Cover Image">
+                </div>
+                <div class="proj-title">
+                    <h1>Numerical Methods Projects</h1>
+                    <h4>ME2016 @ Georgia Institute of Technology &#8212 Fall 2020</h4>
+                </div>
+                <div id="modal-main">
+                    <span id="modal-close">&times</span>
+                    <div id="modal-img-box">
+                        <img alt="template image" id="modal-img">
+                        <p id="modal-cap"></p>
+                    </div>
+                </div>
+                <div class="proj-text">
+                    <p>
+                        In my Numerical Methods course, we engaged in four different "Computing Projects" (CPs), each
+                        covering a
+                        different type of numerical method. Each project consisted of a real-world situation, a
+                        description of relevant
+                        mathematical models, and a set of tasks to complete. All the CPs involved writing MATLAB
+                        functions and scripts
+                        to solve said situations, and some CPs&#8212namely CP1 and CP3&#8212required a report analyzing
+                        and demonstrating the
+                        results. Below are brief descriptions of each CP along with links to the supporting files.
+                    </p><br>
+                    <hr><br>
+                    <div class="proj-block">
+                        <div class="proj-img-norm">
+                            <button class="modal-btn">
+                                <img src="portfolio/9_me2016cp/cp1_cover.png"
+                                    alt="CP1 Cover Image" class="norm-img">
+                            </button>
+                        </div>
+                        <div class="proj-block-text">
+                            <h2 style="text-indent: 0; line-height: 1.5em;">CP1: Curve Fitting Techniques</h2>
+                            <p style="text-indent: 0;">
+                                For this CP, I was tasked with analyzing the efficiency and vibration characteristics of
+                                an off-shore wind turbine. The object in question was a prototype Active Tuned Mass Damper (ATMD).
+                                The goal was to calculate pertinent values about the ATMD by implementing different
+                                curve-fitting techniques in MATLAB.
+                            </p>
+                            <div class="proj-link-cad">
+                                <div class="cad-link-box">
+                                    <a href="https://drive.google.com/drive/folders/1A0s3LWRepGmauPKUk9iyHkkHWWDm7avE?usp=sharing"
+                                        target="_blank">
+                                        <p>Supporting Files</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr><br>
+                    <div class="proj-block">
+                        <div class="proj-img-norm">
+                            <button class="modal-btn">
+                                <img src="portfolio/9_me2016cp/cp2_cover.png"
+                                    alt="CP2 Cover Image" class="norm-img">
+                            </button>
+                        </div>
+                        <div class="proj-block-text">
+                            <h2 style="text-indent: 0; line-height: 1.5em;">CP2: Root-finding & Numerical Integration</h2>
+                            <p style="text-indent: 0;">
+                                This CP focused on analyzing the efficiency of tidal energy generators. Given a few
+                                characteristics of the system, such as the blade diameter, mechanical efficiency, and experimental 
+                                velocity data, I had to calculate the power coefficient. This was accomplished by implementing 
+                                root-finding and numerical integration techniques in MATLAB.
+                            </p>
+                            <div class="proj-link-cad">
+                                <div class="cad-link-box">
+                                    <a href="https://drive.google.com/drive/folders/1WLoKlYavCoZoU7AD1QDAtYIJSD0Z_X72?usp=sharing"
+                                        target="_blank">
+                                        <p>Supporting Files</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr><br>
+                    <div class="proj-block">
+                        <div class="proj-img-norm">
+                            <button class="modal-btn">
+                                <img src="portfolio/9_me2016cp/cp3_cover.png"
+                                    alt="CP3 Cover Image" class="norm-img">
+                            </button>
+                        </div>
+                        <div class="proj-block-text">
+                            <h2 style="text-indent: 0; line-height: 1.5em;">CP3: Ordinary Differential Equations</h2>
+                            <h3 style="text-indent: 0; line-height: 1.5em;">Initial Value Problems</h3>
+                            <p style="text-indent: 0;">
+                                In this CP, I was once again tasked with analyzing the vibration characteristics of a 
+                                wind turbine, but this time with a different approach and goal. The goal was to study
+                                the vibration of the turbine in response to external forces using a simple, single-degree of 
+                                freedom system, modelled by a 2nd order ODE. Given some starting values, I had to implement
+                                various Runge-Kutta Methods as well as MATLAB's built-in functions to accurately predict the 
+                                vibration of the system over time.
+                            </p>
+                            <div class="proj-link-cad">
+                                <div class="cad-link-box">
+                                    <a href="https://drive.google.com/drive/folders/1ePwqx5jHOhbokp59lpxCXvTOFkOdWg1A?usp=sharing"
+                                        target="_blank">
+                                        <p>Supporting Files</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr><br>
+                    <div class="proj-block">
+                        <div class="proj-img-norm">
+                            <button class="modal-btn">
+                                <img src="portfolio/9_me2016cp/cp4_cover.png"
+                                    alt="CP4 Cover Image" class="norm-img">
+                            </button>
+                        </div>
+                        <div class="proj-block-text">
+                            <h2 style="text-indent: 0; line-height: 1.5em;">CP4: Ordinary Differential Equations</h2>
+                            <h3 style="text-indent: 0; line-height: 1.5em;">Boundary Value Problems</h3>
+                            <p style="text-indent: 0;">
+                                For the final CP, I was tasked with determining whether or not the material of the main shaft of
+                                a wind turbine could be modified for cost-effectiveness. Given specific characteristics of the system,
+                                I had to perform a torsion-vibration analysis utilizing the same concepts as CP3, but with a boundary
+                                value problem instead. Included in this CP was a handwritten section, which clearly outlines the steps
+                                taken to solve the given system.
+                            </p>
+                            <div class="proj-link-cad">
+                                <div class="cad-link-box">
+                                    <a href="https://drive.google.com/drive/folders/1BAE7sfhw76t2DFToqGFvBFf1B-XpNp5u?usp=sharing"
+                                         target="_blank">
+                                        <p>Supporting Files</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr><br>
+                    <p>
+                        These projects required me to think "out of the box," as they often had limitations on things like
+                        how many for-loops one could utilize, and they introduced real-world scenarios that were beyond my scope
+                        of prior knowledge. As a result, I managed to learn a significant amount and apply the skills I had learned
+                        both in previous courses as well as this one. As a final note, I received high marks on all of my CPs.
+                    </p><br>
+                    <div class="proj-link-cad">
+                        <div class="cad-link-box">
+                            <a href="https://drive.google.com/drive/folders/1MJU3WzPfDXjZhSa-2YbVD0U-_LXt4lAI?usp=sharing"
+                                target="_blank">
+                                <p>All Supporting Files</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-link-port">
+                    <div class="port-link-box">
+                        <a href="../../portfolio.html">
+                            <p>Back to Portfolio</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../sub_HTMLJS/footer-proj.js"></script>
+    </div>
+    <script src="modal_abridor.js"></script>
+    <script src="../../sub_HTMLJS/navbarWindow.js"></script>
+</body>
+
+</html>

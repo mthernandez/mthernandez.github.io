@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- PORTFOLIO SUBPAGE -->
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <style> html {visibility: hidden;opacity: 0;}</style>
+    <link rel="stylesheet" type="text/css" href="../../CSS/styleDark.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open Sans|Chivo|Montserrat">
+    <link rel="icon" href="../../images/pageIcon.png">
+    <meta name="keywords" content="Portfolio Engineering Internship Hire Job Mechanical Engineer pleasegivemeajoblol">
+    <meta name="description" content="Maximiliano Hernandez's Project Portfolio Website">
+    <meta name="author" content="Maximiliano Hernandez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximiliano Hernandez</title>
+
+    <script src="../../sub_HTMLJS/setCSS_proj.js"></script>
+    <script src="../../sub_HTMLJS/changeCSS_proj.js"></script>
+    <script src="../../sub_HTMLJS/navbarIconOpen2.js"></script>
+    <script src="../../sub_HTMLJS/pageDetect.js"></script>
+    
+    <noscript>
+        Please enable JavaScript! Every page is formed through external files and requires JavaScript.
+    </noscript>
+</head>
+
+<body onload="setCSS_proj();pageDetect()">
+    <div class="grid-container">
+        <script src="../../sub_HTMLJS/header-proj.js"></script>
+        <div class="project-page-content">
+            <div class="project-page-main">
+                <div class="proj-img-main">
+                    <img src="portfolio/4_tripod/topgrip-cover.jpg"
+                        alt="Tripod Grip Cover Image" style="top:-16vw;">
+                </div>
+                <div class="proj-title">
+                    <h1>Tripod Grip Repair</h1>
+                    <h4>Personal Project &#8212 January, June 2019</h4>
+                </div>
+                <div id="modal-main">
+                    <span id="modal-close">&times</span>
+                    <div id="modal-img-box">
+                        <img alt="" id="modal-img">
+                        <p id="modal-cap"></p>
+                    </div>
+                </div>
+                <div class="proj-text">
+                    <p>
+                        My selfie-stick's phone grip broke off one day, so I reverse-engineered the piece and printed out a new one!
+                        I took the opportunity of a simple product to develop my skills with tolerancing and iterative prototyping.
+                        I modelled the first version in Autodesk Inventor, and modelled the subsequent versions in SolidWorks. I printed
+                        the pieces on an Ultimaker 3 and Ender 3 Pro, all with PLA.
+                    </p>
+                    <div class="proj-vid-box">
+                        <video class="proj-vid" style="height: 70vh; background-color:rgba(20,20,20,0.8);" controls>
+                            <source src="portfolio/4_tripod/problem-detail.mp4"
+                                type="video/mp4">
+                        </video>
+                        <p class="caption">Video detailing the problem</p>
+                    </div>
+                    <p>
+                        Throughout this project I was able to refine my tolerancing and CAD capabilities, as well 
+                        as interact with and learn about different kinds of 3D printers.
+                    </p>
+                    <div class="proj-img-norm">
+                        <button class="modal-btn">
+                            <img src="portfolio/4_tripod/topgrip-final.jpg"
+                                alt="Final Product" class="norm-img">
+                        </button>
+                        <p class="caption">Final Product</p>
+                    </div>
+                    <div class="proj-link-cad">
+                        <div class="cad-link-box">
+                            <a href="https://drive.google.com/drive/folders/1HXFy_FbLdwJm-ROkil8GyGHz6ZzbXuMu?usp=sharing" target="_blank">
+                                <p>Download the STL File</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-link-port">
+                    <div class="port-link-box">
+                        <a href="../../portfolio.html">
+                            <p>Back to Portfolio</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../sub_HTMLJS/footer-proj.js"></script>
+    </div>
+    <script src="modal_abridor.js"></script>
+    <script src="../../sub_HTMLJS/navbarWindow.js"></script>
+</body>
+
+</html>

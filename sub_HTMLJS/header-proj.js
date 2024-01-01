@@ -3,7 +3,7 @@ var randvar5 = '<div class="header">'+
 '        <div class="leftHead">'+
 '            <a href="../../index.html" title="Me! :)" class="mainLogo-container">'+
 '                <div class="mainLogo">'+
-'                    <h2>Maximiliano Hernandez</h2>'+
+'                    <h2>Max Hernandez Guzman</h2>'+
 '                </div>'+
 '            </a>'+
 '            <div class="mainDesc">'+

@@ -14,7 +14,7 @@ var randvar7 = '<div class="home-content">'+
 '    </div>'+
 '    <div id="msg_blocklinks"></div> '+
 '    <div class="home-welcome-msg">'+
-'        <h3>I am Maximiliano Hernandez, and this is my portfolio website.</h3><br>'+
+'        <h3>I am Max Hernandez Guzman, and this is my portfolio website.</h3><br>'+
 '        <h3>I invite you to look around!</h3>'+
 '    </div>'+
 '    <div class="home-blocklinks-container">'+

@@ -8,17 +8,16 @@ var randvar1 = '<div class="about-content">'+
 '                <h2>About Me</h2>'+
 '            </div>'+
 '            <div class="intro-main">'+
-'                <p> I am a second year Mechanical Engineering student at the Georgia Institute of Technology. My core'+
+'                <p> I am a fifth year Mechanical Engineering student at the Georgia Institute of Technology. My core'+
 '                    belief is that through perseverance, innovation, and cooperation, the human race can'+
-'                    accomplish great things. I am currently developing my skills as an engineer through various freelance'+
-'                    projects and continued study. In the near future, I hope to work alongside equally passionate'+
-'                    people to solve tomorrow\'s largest problems and to push the bounds of technology and exploration.</p>'+
+'                    accomplish great things. If what you need is a hard-working, compassionate, and down-to-earth'+
+'                    leader with a wide array of experiences, then you\'ve found the right person. Ad astra!</p>'+
 '            </div>'+
 '        </div>'+
 '        <div class="about-links">'+
 '            <div class="about-resume">'+
 '                <div class="link-box">'+
-'                    <a href="resume/resume_maximiliano_hernandez.pdf" target="_blank" download'+
+'                    <a href="resume/resume_maxthg.pdf" target="_blank" download'+
 '                        title="Click to download a copy of my resume">'+
 '                        <h4>Resume</h4>'+
 '                    </a>'+

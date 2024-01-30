@@ -5,7 +5,7 @@ var randvar1 = '<div class="about-content">'+
 '        </div>'+
 '        <div class="intro-msg">'+
 '            <div class="intro-title">'+
-'                <h2>About Me</h2>'+
+'                <h2>About Max <span>(<i>they/them</i>)</span></h2>'+
 '            </div>'+
 '            <div class="intro-main">'+
 '                <p> I am a fifth year Mechanical Engineering student at the Georgia Institute of Technology. My core'+

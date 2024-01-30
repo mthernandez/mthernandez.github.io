@@ -62,13 +62,15 @@ Fonts: Roboto, Montserrat, Chivo, Helvetica, Tahoma, Trebuchet MS, (Sans-serif),
     --border-img: rgba(0, 0, 0, 0.06);
     --border-rest: rgba(0, 0, 0, 0.04);
 
-    --button-color: #4080f8;
+    --button-color: #577ef8; /* 5BCEFA */
     --button-text-color: rgba(255, 255, 255, 0.95);
     --button-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
-    --blocklink-hover-color: rgba(48, 100, 160, 0.16);
-    --blocklink-border-color: #4080f8;
+    --blocklink-hover-color: rgba(245, 169, 184, 0.24);
+    --blocklink-border-color: #577ef8; /* 5BCEFA */
+    --button-color-2: #577ef8; /* 5BCEFA */ /* 245, 169, 184  #f394de */
+    --button-color-3: #dadada; /* 150, 250, 150; */
 
-    --main_color: #2ec2e2;
+    --main_color: #577ef8; /* 2ec2e2 */;
     --accent_color_1: #97b2a6;
     --main-text-color: rgba(0, 0, 0, 0.9);
     --welcome-text-color: rgba(255, 255, 255, 0.95);
@@ -314,6 +316,11 @@ h3 {
     color: var(--main-text-color);
 }
 
+#project-link-text {
+    color: var(--button-text-color);
+    font-weight: 2000;
+}
+
 h4,
 h5,
 h6,
@@ -379,7 +386,9 @@ a:hover {
 }
 
 .navbar-main #navbar-links .navbar-link.current {
-    background-color: var(--button-color);
+    background-color: var(--button-color-2); /* linear-gradient(70deg, var(--button-color-2) 90%, white 90%, white 92%, var(--button-color) 92%); */
+    overflow: hidden;
+    border-color: rgb(230, 230, 230);
     color: var(--navbar-current-text-color);
 }
 
@@ -618,7 +627,7 @@ input:checked+.slider:before {
 
 @media screen and (max-width: 420px) {
     .leftHead {
-        font-size: 0.85em;
+        font-size: 0.80em;
     }
 
 }
@@ -645,7 +654,7 @@ input:checked+.slider:before {
     grid-column: 1 / 4;
     background-image: url("../images/home-welcome-img.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*  background-attachment: fixed; */
     background-position: center;
     background-size: cover;
     min-height: var(--welc_img_hei);
@@ -791,7 +800,7 @@ input:checked+.slider:before {
 .home-content .home-blocklinks-container #blocklink1 {
     grid-row: 1;
     grid-column: 1;
-    background-image: url("../images/blocklink-portfolio.jpg");
+    background-image: url("../images/blocklink-about.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -800,7 +809,7 @@ input:checked+.slider:before {
 .home-content .home-blocklinks-container #blocklink2 {
     grid-row: 1;
     grid-column: 2;
-    background-image: url("../images/blocklink-about.jpg");
+    background-image: url("../images/blocklink-portfolio.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -920,20 +929,22 @@ input:checked+.slider:before {
     width: 95%;
     height: 95%;
     margin: auto;
-    background-color: var(--background-inc2);
+    border-radius: 5px;
+    background-color: var(--button-color-3);
+    overflow: hidden;
     display: grid;
     grid-template-rows: 80% 20%;
     grid-template-columns: auto;
     gap: 0;
     transition-duration: 0.32s;
-    filter: saturate(75%) contrast(90%);
+    filter: saturate(80%) contrast(90%);
 
 }
 
 .project-box .project-sub-box:hover {
     width: 98%;
     height: 98%;
-    filter: saturate(150%) contrast(100%);
+    filter: saturate(125%) contrast(100%);
 }
 
 .project-box .project-sub-box .project-img {
@@ -957,7 +968,7 @@ input:checked+.slider:before {
     grid-column: 1;
     text-align: center;
     margin: auto;
-    color: var(--main-text-color);
+    color: var(--button-text-color);
 }
 
 @media screen and (max-width: 1080px) {
@@ -1066,6 +1077,7 @@ input:checked+.slider:before {
     border-radius: 0 0 5px 5px;
 }
 
+/* Project Page Text Normal Image Box */
 .project-page-content .project-page-main .proj-text .proj-img-norm {
     width: 80%;
     margin: 20px auto;
@@ -1101,6 +1113,52 @@ input:checked+.slider:before {
     border: none;
 }
 
+/* Project Page Text Image Gallery */
+.project-page-content .project-page-main .proj-text .proj-img-gallery {
+    width: 80%;
+    margin: 20px auto;
+    overflow: visible;
+    text-align: center;
+    font-style: italic;
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 3;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.project-page-content .project-page-main .proj-text .proj-img-gallery .caption {
+    width: 90%;
+    margin: 5px auto;
+    font-size: 0.9em;
+}
+.project-page-content .project-page-main .proj-text .proj-img-gallery .gallery-img {
+    width: auto;
+    height: 150px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 3px;
+    transition-duration: 0.24s;
+    border: rgba(20, 20, 20, 0) 1px solid;
+    opacity: 0.9;
+}
+
+.project-page-content .project-page-main .proj-text .proj-img-gallery .gallery-img:hover {
+    opacity: 1;
+    border: var(--border-img) 1px solid;
+}
+
+.proj-img-gallery button {
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+
+/* Project Page Text Video Box */
 .project-page-content .project-page-main .proj-text .proj-vid-box {
     width: 80%;
     margin: 20px auto;
@@ -1161,7 +1219,6 @@ input:checked+.slider:before {
     left: 0;
     padding-top: 100px;
     width: 100%;
-    height: 100%;
     overflow: auto;
     cursor: pointer;
     background-color: rgb(20, 20, 20);
@@ -1171,8 +1228,10 @@ input:checked+.slider:before {
 #modal-main #modal-img-box {
     margin: auto;
     display: block;
-    width: 100vw;
-    max-width: 1000px;
+    width: 90vw;
+    height: 100vh;
+    /* width: 100vw; */
+    /* max-width: 1000px; */
     cursor: default;
     animation: modalPopup 0.64s ease;
     z-index: 5;
@@ -1181,7 +1240,9 @@ input:checked+.slider:before {
 
 #modal-main #modal-img-box #modal-img {
     margin: auto;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 90vw;
+    max-height: 80vh;
     padding: 12px;
 }
 
@@ -1230,18 +1291,23 @@ input:checked+.slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .project-page-content .project-page-main .proj-text .proj-link-cad .cad-link-box {
     width: 95%;
     height: 95%;
     transition-duration: 0.32s;
+    /*  overflow: hidden; */
+    /* background-color: rgba(255, 255, 255, 0); */
+    /* background: linear-gradient(70deg, var(--button-color-2) 8%, white 8%, white 10%, var(--button-color) 10%); */
 }
 
 .project-page-content .project-page-main .proj-text .proj-link-cad .cad-link-box:hover {
     width: 98%;
-    height: 98%;
+    height: 98%;    
     box-shadow: var(--button-shadow);
+    /* background: linear-gradient(70deg, var(--button-color-2) 90%, white 90%, white 92%, var(--button-color) 92%); */
 }
 
 .project-page-content .project-page-main .proj-text .proj-link-cad .cad-link-box a {
@@ -1253,10 +1319,9 @@ input:checked+.slider:before {
     width: 100%;
     height: 100%;
     margin: auto;
-    background-color: var(--button-color);
     border-radius: 3px;
     line-height: 48px;
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--button-text-color);
 }
 
@@ -1294,7 +1359,7 @@ input:checked+.slider:before {
     width: 100%;
     height: 100%;
     margin: auto;
-    background-color: var(--button-color);
+    background-color: var(--button-color-2);
     color: var(--button-text-color);
     line-height: 48px;
     font-weight: bold;
@@ -1425,7 +1490,7 @@ input:checked+.slider:before {
     margin: auto;
     display: flex;
     place-items: center;
-    background-color: var(--button-color);
+    background-color: var(--button-color-2);
     border-radius: 3px;
     transition-duration: 0.32s;
 }
@@ -1440,6 +1505,7 @@ input:checked+.slider:before {
 .about-links .link-box a h4 {
     width: 100%;
     font-weight: bold;
+    font-size: 14pt;
     color: var(--button-text-color);
 }
 
